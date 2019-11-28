@@ -1,0 +1,16 @@
+#clock
+  hr
+  .hours
+    - for (var x = 1; x < 25; x++)
+      if x%2 == 0
+        span= x/2
+      else
+        span.minor -
+  .minutes
+    - for (var x = 0; x < 60; x++)
+      if x === 0 || x%5 == 0
+        span= x
+      else
+        span.minor -
+  .center
+        hr
